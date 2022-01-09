@@ -34,7 +34,6 @@ public class DrawingView extends StackPane {
         @Override
         public void layoutChildren() {
             super.layoutChildren();
-            System.out.println("DrawingView: Width: " + this.getWidth() + "  Height: " + this.getHeight());
         }
 
         public void doResize(double w, double h) {

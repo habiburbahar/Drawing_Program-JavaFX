@@ -78,7 +78,6 @@ public class DrawingController {
         }
     }
     public void handleReleased(double x, double y, MouseEvent event) {
-        System.out.println(currentState.toString());
         switch (currentState) {
             case CREATE_OR_UNSELECT -> iModel.clearSelection();
             case RESIZING -> {

@@ -58,9 +58,6 @@ public class InteractionModel {
     }
 
     public void setViewExtents(double newWidth, double newHeight) {
-        //public void setViewExtents(double newWidth, double newHeight, double newRight, double newBottom) {
-//        viewMaxRight = newRight;
-//        viewMaxBottom = newBottom;
         viewWidth = newWidth;
         viewHeight = newHeight;
         notifySubscribers();
@@ -78,7 +75,6 @@ public class InteractionModel {
         if (viewLeft > (1.0 - viewWidth)) viewLeft = 1.0 - viewWidth;
         if (viewTop < 0) viewTop = 0;
         if (viewTop > (1.0 - viewHeight)) viewTop = 1.0 - viewHeight;
-        //System.out.println("viewLeft: " + viewLeft + "  viewTop: " + viewTop + "   " + dX + "," + dY);
         notifySubscribers();
     }
 

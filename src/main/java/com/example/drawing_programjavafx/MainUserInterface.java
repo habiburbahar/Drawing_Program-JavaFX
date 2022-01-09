@@ -13,7 +13,6 @@ public class MainUserInterface extends StackPane {
         colours = new ColorView();
         drawing = new DrawingView();
         tools.setMinWidth(60);
-        //tools.setPrefWidth(160);
         colours.setMinWidth(60);
         BorderPane root = new BorderPane();
         root.setLeft(tools);
@@ -46,7 +45,6 @@ public class MainUserInterface extends StackPane {
     @Override
     public void layoutChildren() {
         super.layoutChildren();
-        System.out.println("MainUI: Width: " + this.getWidth() + "  Height: " + this.getHeight());
         drawing.doResize(this.getWidth()-120, this.getHeight());
     }
 
